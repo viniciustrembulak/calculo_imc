@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora imc</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+    <script src="script.js" defer></script>  
+</head>
+<body>
+
+    <div class="alert-error">
+        Digite somente números
+    </div>
+
+    <div class="container">
+
+        <main class="card">
+            <form action="">
+                <h1 class="title">Cálculo de IMC</h1>
+                <div class="input-wrapper">
+                    <label for="weight">Peso (kg)</label>
+                    <input 
+                    id="weight" 
+                    type="text"
+                    placeholder="60">
+                </div>
+                <div class="input-wraper">
+                    <label for="height">Altura (m)</label>
+                    <input 
+                    id="height" 
+                    type="text"
+                    placeholder="165">
+                </div>
+                <div class="botao">
+                    <button class="button" type="submit">
+                        <svg
+                        viewBox="0 0 16 16"
+                        class="bi bi-lightning-charge-fill"
+                        fill="currentColor"
+                        height="16"
+                        width="16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                        d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"
+                      ></path>
+                    </svg>
+                      Calcular IMC
+
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div> 
+
+    <div class="modal-wrapper">
+        <div class="modal card">
+            <h2 id="result" class="title">
+                <button class="close">
+                    X
+                  </button>
+                  
+                Seu IMC é de 28
+            </h2>
+
+        </div>
+    </div>
+</body>
+</html>
