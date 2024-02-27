@@ -160,6 +160,12 @@ form input::placeholder {
   
   /* modal */
 
+  .modal-wrapper.open {
+   
+    opacity: 1;
+    visibility: visible;
+  }
+
   .modal-wrapper {
     position: absolute;
     inset: 0;
